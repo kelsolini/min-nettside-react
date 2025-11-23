@@ -7,11 +7,15 @@ import SkillsItem from "../components/skills/SkillsItem";
 const HomePage = () => {
     return(
         <>
-            <NavBar/>
+        <NavBar/>
+        <div className="grid grid-cols-12 gap-6">
+            
             <AboutItem/>
             <ProjectItem/>
             <HobbiesItem/>
             <SkillsItem/>
+        </div>
+
         </>
     );
 }
