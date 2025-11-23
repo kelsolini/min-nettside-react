@@ -1,8 +1,11 @@
-const ProjectItem = () => {
+import type { IProject } from "../../interfacecs/IProject";
+
+const ProjectItem = ({project} : {project: IProject}) => {
     return(
-        <article className="col-span-6">
-            <h1>PROJECTS</h1>
-            <p>Alot of shit</p>
+        <article>
+            <h3>{project.name}</h3>
+            <p>{project.description}</p>
+            <img src={project.image} alt={project.name + "Foto."} />
         </article>
     );
 }

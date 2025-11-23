@@ -1,9 +1,24 @@
+import Project from "../../data/Projects";
+import ProjectItem from "./ProjectItem";
+
 const ProjectList = () => {
+
+    const getProjectsJSX = () => {
+        const projectJSX = Project.map((project, index)=>{
+            return(
+                <ProjectItem
+                    key={index}
+                    project={project}
+                />
+            )
+        });
+        return projectJSX;
+    }
+
     return(
-        <article>
-            <h1>PROJECT LIST</h1>
-            <p>Alot alot of shit</p>
-        </article>
+        <section className="col-span-6">
+            {getProjectsJSX()}
+        </section>
     );
 }
 

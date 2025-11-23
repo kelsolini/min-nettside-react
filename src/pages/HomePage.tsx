@@ -1,6 +1,6 @@
 import NavBar from "../components/shared/NavBar";
 import AboutItem from "../components/about/AboutItem";
-import ProjectItem from "../components/projects/ProjectItem";
+import ProjectList from "../components/projects/ProjectList";
 import HobbiesItem from "../components/hobbies/HobbiesItem";
 import SkillsItem from "../components/skills/SkillsItem";
 
@@ -11,7 +11,7 @@ const HomePage = () => {
         <div className="grid grid-cols-12 gap-6">
             
             <AboutItem/>
-            <ProjectItem/>
+            <ProjectList/>
             <HobbiesItem/>
             <SkillsItem/>
         </div>
